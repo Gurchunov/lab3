@@ -92,10 +92,15 @@ public class Main {
 
             }
 
+
+        }
+        for (int a = 0; a < array.length; a++) {
+            if (array[a] > array[position]) {
+                position  = a;
+            }
         }
         System.out.println(Arrays.toString(array));
-        System.out.println("максимальное число " + maxNum + " элемент массива № ");
-
+        System.out.println("максимальное число " + maxNum + " элемент массива № " + (position+1));
     }
 }
 
